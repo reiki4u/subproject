@@ -1,0 +1,137 @@
+/*Grafico de series en porcentajes
+----------------------------------------------- */
+.grafico {
+position: relative; /* IE is dumb */
+width: 215px;
+border: 1px solid #B1D632;
+padding: 2px;
+margin-left: 5px;
+}
+.grafico .bar {
+display: block;
+position: relative;
+background: #B1D632;
+text-align: center;
+color: #333;
+height: 20px;
+line-height: 20px;
+}
+.grafico .barr {
+display: inline;
+position: relative;
+background: #FFFFF9;
+text-align: center;
+color: #333;
+height: 1em;
+line-height: 1em;
+}
+
+.grafico .bar span { 
+position: absolute; 
+left: 1em; 
+}
+
+.grafico-2 {
+position: relative; /* IE is dumb */
+width: 215px;
+border: 1px solid #B1D632;
+padding: 2px;
+margin-left: 5px;
+}
+.grafico-2 .bar {
+display: block;
+position: relative;
+background: red;
+text-align: center;
+color: #333;
+height: 20px;
+line-height: 20px;
+}
+.grafico-2 .barr {
+display: inline;
+position: relative;
+background: #FFFFF9;
+text-align: center;
+color: #333;
+height: 1em;
+line-height: 1em;
+}
+
+.grafico-2 .bar span { 
+position: absolute; 
+left: 1em; 
+}
+
+/* Segundo */
+ .dl { 
+	margin: 0 10px 0px;
+	padding: 0; 
+	} 
+ dt {
+	position: relative; /* IE is dumb */ 
+	clear: both; 
+	display: block; 
+	float: left; 
+	width: 104px; 
+	height: 20px; 
+	line-height: 20px; 
+	margin-right: 17px; 
+	font-size: .75em; 
+	text-align: right; 
+	} 
+ dd { 
+	position: relative; /* IE is dumb */ 
+	display: block; 
+	float: left; 
+	width: 197px; 
+	height: 20px; 
+	margin: 0 20px 15px; 
+	background: url("g_colorbar.jpg"); 
+	} 
+  /* html */
+  .dd {
+   float: none; 
+   } 
+    /* IE is dumb; Quick IE hack, apply favorite filter methods for wider browser compatibility */
+    dd div {
+    position: relative; 
+    background: url("g_colorbar2.jpg"); 
+    height: 20px; 
+    width: 75%; 
+    text-align:right; 
+    } 
+    dd div strong {
+     position: absolute; 
+     right: -5px; 
+     top: -2px; 
+     display: block; 
+     background: url("g_marker.gif"); 
+     height: 24px; 
+     width: 9px; 
+     text-align: left; 
+     text-indent: -9999px; 
+     overflow: hidden; 
+    }
+.jups {
+     position: absolute; 
+     right: 0px; 
+     top: 3px; 
+     display: block; 
+     height: 20px; 
+     width: 200px;
+	 background: transparent;
+	 text-align: center;
+
+    }
+    
+.jump {
+     position: relative; 
+     right: 0px; 
+     top: -20px; 
+     display: block; 
+     height: 5px; 
+     width: 200px;
+	 background: transparent;
+	 text-align: center;
+
+    }

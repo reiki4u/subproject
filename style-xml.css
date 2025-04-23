@@ -1,0 +1,289 @@
+/*https://mdn.github.io/css-examples/counter-style-demo/*/
+/*@counter-style labels {
+  system: alphabetic;
+  symbols: 'loc' 'LastMod' 'ChangeFreq' 'Priority';
+  prefix: '<';
+  suffix: '>';
+}*/
+body {
+  counter-reset: section;                      /* Set a counter named 'section', and its initial value is 0. */
+}
+urlset>url{
+    display: block;
+    margin-left: 20px;
+    border-spacing: 10px;
+    border: black 1px solid;
+    margin: 0.8rem 0.8rem 1rem 1rem;
+    list-style: labels;
+    /*padding-left: 15ch;*/
+    /*list-style: disc inside;*/
+}
+loc {
+    display: block;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+lastmod, changefreq, priority, pubDate, lastBuildDate {
+    display: block;
+    margin-left: 8.5rem;
+    line-height: 0.2rem;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+title{
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+link{
+    content: "";
+    cursor: pointer;
+}
+link, summary{
+    display: block;
+    margin-left: 4.5rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+pubDate {
+    display: block;
+    margin-left: 4.5rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+lastBuildDate{
+    display: block;
+    margin-left: 9.5rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+category {
+    display: block;
+    margin-left: 4.5rem;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+image>url{
+    display: block;
+    margin-left: 4.5rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+    color: #fc7a91;
+}
+description, managingEditor,webMaster {
+    display: block;
+    margin-left: 4.5rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+
+description::before, lastBuildDate::before, managingEditor::before, webMaster::before {
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    margin-left: -7.5rem;
+    display: inline-block;
+    margin-top: 0rem;
+}
+language{
+    display: block;
+    margin-left: 9rem;
+    
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+language::after{
+    content: "Lenguaje:";
+    margin-left: -6.5rem;
+}
+language::before{
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    
+    display: inline-block;
+    margin-top: 0rem;
+    margin-left: -7rem;
+}
+summary::before{
+    display: block;
+    margin-left: 16.5rem;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 1rem;
+    /*list-style: none;*/
+    margin-top: 0;
+    text-decoration: none;
+}
+/* pone las ramificaciones*/
+lastmod::before, lastBuildDate::before,  {
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    margin-left: -7.5rem;
+    display: inline-block;
+}
+/*pubDate::before{
+    content: "";
+    margin-left: -7.5rem;
+}*/
+category::before,pubDate::before{
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    margin-left: -2.5rem;
+    display: inline-block;
+    margin-top: 0rem;
+}
+lastmod::before{
+    margin-top: -1rem;
+}
+pubDate::before, lastBuildDate::before{
+    margin-top: -0.5rem;
+}
+link::before, summary::before, image>url::before{
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    margin-left: -2.5rem;
+    display: inline-block;
+    margin-top: 0rem;
+}
+changefreq::before, priority::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    border-bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    margin-left: -7.5rem;
+    margin-top: -1.4rem;
+}
+loc, link {
+  color: green;
+}
+lastmod{
+  color: #ff5252;
+ }
+ lastmod::after{
+    content: "Modificado:";
+    margin-left: -10rem;
+}
+category{
+  color: #ff5252;
+ }
+ category::after{
+    content: "";
+    margin-left: -10rem;
+}
+changefreq{
+  color: #87bff5;
+}
+changefreq::after{
+    content: "Frecuencia:";
+    margin-left: -8.3rem;
+}
+priority{
+    color: #fc7a91;
+}
+priority::after{
+    content: "Prioridad:";
+    margin-left: -6.5rem;
+}
+
+/** ESTILOS PARA EL RSS **/
+item{
+    display: block;
+    margin-left: 20px;
+    border-spacing: 10px;
+    border: black 1px solid;
+    margin: 0.8rem 0.8rem 1rem 1rem;
+    list-style: labels;
+    /*padding-left: 15ch;*/
+    /*list-style: disc inside;*/
+}
+item>title{}
+/*title::after{
+    content: "Titulo:";
+    margin-left: -32.5rem;
+}*/
+/*link::after{
+    content: "Link:";
+    margin-left: -6.5rem;
+}*/
+
+description, summary{
+  color: #87bff5;
+}
+pubDate, lastBuildDate{
+  color: #ff5252;
+ }
+ pubDate::after {
+    margin-left: 9rem; 
+ }
+ lastBuildDate::after{
+    content: "Modificado:";
+    margin-left: -18rem;
+}
+
+image>url::after{
+    content: ":";
+    margin-left: -6.5rem;
+}
